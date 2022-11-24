@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    /* background-color: black; */
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+button {
+    background-color: #f9ca24;
+    color: azure;
+    width: 150px;
+    height: 70px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px rgba(249, 202, 36, 0.5);
+}
+
+/* hover悬浮  focus聚焦(一般用于输入类)  active 点击 */
+.magic:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
