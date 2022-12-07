@@ -8,7 +8,7 @@
 |  3   | 11-21 | 原生js实现的拖拽功能 | [demo](https://github.com/mayafei1997/idea-everyday/blob/master/img/11-21%E5%8E%9F%E7%94%9Fjs%E5%AE%9E%E7%8E%B0%E6%8B%96%E6%8B%BD%E6%95%88%E6%9E%9C.gif) |
 |  4   | 11-24 | 一个简单的按钮特效I  | [demo](https://github.com/mayafei1997/idea-everyday/blob/master/img/11-24%E7%AE%80%E5%8D%95%E7%9A%84%E6%8C%89%E9%92%AE%E7%89%B9%E6%95%88.gif) |
 |  5   | 12-6  |    漂亮的动感表单    | [demo](https://github.com/mayafei1997/idea-everyday/blob/master/img/12-6%E8%A1%A8%E5%8D%95%E5%8A%A8%E6%84%9F%E6%95%88%E6%9E%9C.gif) |
-|  6   | 12-6  |    移动端视图切换    |                             demo                             |
+|  6   | 12-6  |    移动端视图切换    | [demo](https://github.com/mayafei1997/idea-everyday/blob/master/img/12-6%E7%A7%BB%E5%8A%A8%E7%AB%AF%E8%A7%86%E5%9B%BE%E5%88%87%E6%8D%A2.gif) |
 
 
 
