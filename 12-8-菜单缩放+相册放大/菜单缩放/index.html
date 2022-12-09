@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+
+        body {
+            background-color: beige;
+        }
+
+        main {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        ul li {
+            margin-right: 100px;
+        }
+
+        ul li strong {
+            padding: 5px 20px;
+            background-color: cornflowerblue;
+            color: azure;
+            cursor: pointer;
+        }
+
+        ul li div {
+            display: flex;
+            flex-direction: column;
+            background-color: cornflowerblue;
+            width: 200px;
+            transform: scale(0);
+            transition: 1s;
+            transform-origin: left top;
+        }
+
+        div a {
+            text-decoration: none;
+            color: azure;
+            padding: 10px;
+        }
+
+        /* hover后面 跟的是子元素才起效  */
+        ul li:hover div {
+            transform: scale(1);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li>
+                <strong>base</strong>
+                <div>
+                    <a href="#">HTML</a>
+                    <a href="#">CSS</a>
+                    <a href="#">JS</a>
+                </div>
+            </li>
+
+            <li>
+                <strong>progress</strong>
+                <div>
+                    <a href="#">Vue</a>
+                    <a href="#">React</a>
+                    <a href="#">angular</a>
+                </div>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
