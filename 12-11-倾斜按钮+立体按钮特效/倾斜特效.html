@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: wheat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        main {
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: aqua; */
+
+        }
+
+        a {
+            color: orange;
+            display: block;
+            text-decoration: none;
+            border: 3px solid orangered;
+            font-size: 2em;
+            width: 250px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+
+            overflow: hidden;
+        }
+
+        a::after {
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 0;
+            background-color: coral;
+            z-index: -1;
+            transform: skewX(-45deg);
+            transition: 1s;
+        }
+
+        a:hover::after {
+            width: 200%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <a href="" class="btn">
+            houdunren
+        </a>
+    </main>
+</body>
+
+</html>
