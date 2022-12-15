@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: wheat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .card {
+            width: 300px;
+            height: 200px;
+            background: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            color: aliceblue;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: perspective(600px) rotateY(30deg);
+        }
+
+        .card::before,
+        .card::after {
+            background-color: red;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            position: absolute;
+            transition: 1.5s;
+
+        }
+
+        .card::before {
+            content: '新年';
+            left: 0;
+            top: 0;
+            justify-content: flex-end;
+            transform-origin: left;
+
+
+        }
+
+        .card::after {
+            content: '快乐';
+            right: 0;
+            top: 0;
+            justify-content: flex-start;
+            transform-origin: right;
+        }
+
+        .card:hover::before {
+
+            transform: rotateY(-160deg);
+        }
+
+        .card:hover::after {
+
+            transform: rotateY(160deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        Happy New Year
+    </div>
+</body>
+
+</html>
